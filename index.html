@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEORI KEMERDEKAAN</title>
+    <style>
+        /* Mengatur font dan warna dasar */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Kotak pembungkus agar pas di HP dan Laptop */
+        .container {
+            width: 100%;
+            max-width: 600px; /* Batas maksimal di laptop */
+            background-color: #262626;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-top: 5px solid #ff4b2b;
+            box-sizing: border-box; /* Biar padding gak ngerusak lebar */
+        }
+
+        h1 {
+            color: #ff4b2b;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            filter: grayscale(30%);
+            transition: 0.3s;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.01);
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #dddddd;
+            text-align: justify;
+        }
+
+        strong {
+            color: #ff4b2b;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #444;
+            margin: 20px 0;
+        }
+
+        /* Gaya Tombol */
+        .btn-neon {
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ff4b2b;
+            background: transparent;
+            border: 2px solid #ff4b2b;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+            width: 100%; /* Biar gampang diklik di HP */
+        }
+
+        .btn-neon:hover {
+            background: #ff4b2b;
+            color: white;
+            box-shadow: 0 0 20px #ff4b2b;
+        }
+
+        #pesanMuncul {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: none; /* Sembunyi dulu */
+            color: #ffeb3b;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"> 
+        <h1>KALIAN TAHU GAK KALAUU......</h1>
+        <hr>
+        <p style="text-align: center;">Kita <strong>Merdeka</strong> karena momentum dari Amerika!!!</p>
+        
+        <img src="https://i.ibb.co.com/7NdzDs4P/atom.jpg" alt="Gambar Bom Atom">
+        
+        <hr>
+        <p>
+            Seperti yang kita tahu, pada tanggal 6 dan 9 Agustus 1945 terjadi penyerangan yang dilakukan oleh
+            Amerika kepada Jepang dengan menjatuhkan Bom Atom di kota <strong>Hiroshima</strong> dan <strong>Nagasaki</strong>.
+            <br><br>
+            Di sinilah muncul teori di mana kalau Amerika tidak menyerang Jepang, maka Indonesia belum Merdeka pada 17 Agustus 1945. Kenapa bisa ya? Ini Teorinya:
+            <br><br>
+            Dalam sejarah asli, Proklamasi 17 Agustus 1945 terjadi karena Jepang menyerah kalah, menciptakan kekosongan kekuasaan. Jika Amerika tidak menyerang, militer Jepang (terutama Kempeitai) tetap berada dalam kekuatan penuh di Indonesia. Tanpa adanya kekalahan Jepang, peristiwa Rengasdengklok tidak akan pernah terjadi, dan para tokoh bangsa tidak akan memiliki celah untuk memproklamirkan kemerdekaan secara mandiri.
+        </p>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button id="tombolRahasia" class="btn-neon">KLIK DI SINI!</button>
+            <p id="pesanMuncul">Terimakasih Karena Telah Membaca🖕</p>
+        </div>
+    </div>
+
+    <script>
+        const tombol = document.getElementById('tombolRahasia');
+        const pesan = document.getElementById('pesanMuncul');
+
+        tombol.addEventListener('click', function() {
+            pesan.style.display = 'block';
+            tombol.style.display = 'none'; // Sembunyikan tombol setelah diklik
+        });
+    </script>
+
+</body>
+</html>
